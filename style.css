@@ -1,5 +1,5 @@
 /*
-Theme Name: wpTheme_recipesForMulticookers
+Theme Name: wpTheme_forFitkiss.club
 Theme URI: 
 Description:  
 Version: 1.0
@@ -19,27 +19,32 @@ Author URI:
 	} 
 /* Хэдер */
 #logo {
-		height: 100px;
 		float:left;	
+		width: 98%;
 	}
 #logo img {
-
 		float: left; 
-		width: 300px; 
-		height: 75px;
+		width: 294px; 
+		height: 160px;
 		border: none;
+		padding: 0px;
+		margin: 0px;
 	}
 .headline {
-	height: 100px;
-	line-height: 100px;
+	font-size: 36px;
+    line-height: 1.1;
+	font-weight: 700;
+	color: Crimson;
+	font-family: "Adamina", serif;
+	margin: 10px;
+	float: left;
 }
 #fullHeader {
 	width: 100%;
 	background-color:#ffffff;
 }
 #header {
-		width: 980px;
-		height: 100px;
+		display: inline;
 		float:left;
 	}
 /* End of Header */
@@ -153,13 +158,9 @@ textarea {width: 95%;}
 	padding: 1px;
 	margin: 1px;
 }
-#npcatch li {
-	list-style-type: none;
-	padding: 1px;
-	margin: 1px;
-}
+
 .sidebar .menu {
-		background: none; 
+	background: none; 
 }
 .sidebar .menu a {
 	background: none; 
@@ -184,16 +185,19 @@ textarea {width: 95%;}
 
 /* ---------------- !!! СМЕНА ЭКРАНА !!! ---------------- */
 
-@media screen and (min-width: 1045px)and (max-width: 1367px) {
+@media screen and (min-width: 1045px) and (max-width: 1367px) {
 	body {
 		width: 1045px;
 	}
+	#logo {
+		display: block;
+		float: left;
+		width: 98%;
+	}
 	#logo img {
-		padding:10px; 
-		width: 300px; 
-		height: 75px;
 		border:none;
 		margin: 0;
+		padding: 0px;
 	}
 	#header {
 		width: 665px;
@@ -204,10 +208,32 @@ textarea {width: 95%;}
 
 /* ---------------- !!! СМЕНА ЭКРАНА !!! ---------------- */
 
-@media screen and (min-width: 701px)and (max-width: 1044px) {
+@media screen and (min-width: 701px) and (max-width: 1044px) {
 	body {
 		width: 700px;
 	}
+	#header {
+		width: 98%;
+	}
+	.headline {
+		width: 98%;
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+	}
+	#logo {
+		display: block;
+		margin: 0 auto;
+		float: none;
+		width: 98%;
+	}
+	
+	#logo img {
+		display: block;
+		margin: 0 auto;
+		float: none;
+	}
+	
 	#content {
 		width: 690px;
 	}
@@ -233,18 +259,20 @@ textarea {width: 95%;}
 	}
 	
 	#logo {
-		height: auto;
+		margin: 0 auto;
+		float: none;
 		padding: 0% 1%;
-		width: 98%;
 		background-repeat: no-repeat;
 		font-size:28px;
 	}
 	
 	#logo img {
 		padding:10px; 
-		float:left; 
-		width: 98%; 
-		height: 75px;
+		display: block;
+		margin: 0 auto;
+		float: none;
+		width: 294px; 
+		height: 160px;
 		border:none;
 	}
 	
@@ -252,8 +280,14 @@ textarea {width: 95%;}
 		height:  auto;
 		padding: 0% 1%;
 		width: 98%;
+		display: block;
+		margin: 0 auto;
 	}
-
+	.headline {
+		float: none;
+		margin: 5px auto;
+		text-align: center;
+	}
 	#toggleMenu {
 		font-size: 28px;	
 		text-align: center;	

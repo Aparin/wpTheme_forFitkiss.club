@@ -11,15 +11,15 @@
 <body>	
 <div id='fullHeader'>
 	<div id="logo">
-		<a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_url'); ?>/images/logo.png" style='padding:10px; float:left;'></a>
-	<div class="headline">Журнал любви и бодибилдинга</div>
+		<a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_url'); ?>/images/logo.png" '></a>
+		<div class="headline">Журнал любви и бодибилдинга</div>
+		<div id="header">	
+			<?php if ( is_active_sidebar( 'in_header' ) ) : ?>
+			<?php dynamic_sidebar( 'in_header' ); ?>
+			<?php endif; ?>
+		</div>
 	</div>
-	<div id="header">	
-		<?php if ( is_active_sidebar( 'in_header' ) ) : ?>
-		<?php dynamic_sidebar( 'in_header' ); ?>
-		<?php endif; ?>
-	</div>
-	<div style = 'clear:both;'></div>
+	<div style = "clear:both;"></div>
 </div>
 
 <a id="toggleMenu" onclick="toggle();">&#9776;</a>
